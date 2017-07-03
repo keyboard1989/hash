@@ -6,7 +6,7 @@ import (
 
 func TestDJBHash(t *testing.T) {
 	testStr := "a"
-	expect := uint(97)
+	expect := uint(177670)
 
 	actual := DJBHash(testStr)
 	if actual != expect {
@@ -14,7 +14,7 @@ func TestDJBHash(t *testing.T) {
 	}
 
 	testStr = "abdedffdjasfjda"
-	expect = 12856954179586838515
+	expect = 9018872858425983576
 	actual = DJBHash(testStr)
 	if actual != expect {
 		t.Error("djb hash error")
